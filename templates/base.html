@@ -1,0 +1,91 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block 'head' %}
+    
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>{% block 'title' %}
+            {% endblock %}</title>
+  </head>
+  <div class="text-center container-fluid">
+    <img src="/static/img/principal.jpg"  style="width: 100%;" alt="">
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light base">
+      <a class="navbar-brand" href="{% url 'home' %}"><img src="/static/img/menu.png" height="30px" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+</header>
+  <body class="fundo">
+    {% block 'body' %}
+    
+    {% endblock %}
+    <br>
+   <!-- Footer -->
+   <div class="container-fluid">
+   <footer class="page-footer font-small teal pt-4 base">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Pagamento</h5>
+          <p>Aceitamos todas as formas de pagamentos</p>
+          <img src="{% static 'img/pagamentos/visto.png' %}" height="30px" alt="visa">
+          <img src="{% static 'img/pagamentos/paypal .png' %} " height="30px" alt="paypal">
+          <img src="{% static 'img/pagamentos/pagamento-online.png' %} " height="" alt="pagamento oline">
+          <img src="{% static 'img/pagamentos/pagamento-com-cartao-de-credito.png' %} " height="30px" alt="cartao">
+          <img src="{% static 'img/pagamentos/pix-106.png' %} " height="30px" alt="pix">
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Redes Sociais</h5>
+          <p>Nao deixe de nos acompanhar em nossas redes sociais</p>
+          <img src="{% static 'img/redes/facebook.png' %} " height="30px" alt="facebook">
+          <img src="{% static 'img/redes/instagram.png'%} " height="30px" alt="instagram">
+     
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="https://github.com/santosgv" target="_blank" style="color: var(--terceira);"> https://github.com/santosgv</a>
+    </div>
+    <!-- Copyright -->
+   
+  </a>
+  </footer>
+<!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+  </body>
+</html>
